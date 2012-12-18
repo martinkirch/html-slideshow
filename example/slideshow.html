@@ -27,10 +27,10 @@
     <!-- Begin slides -->
     <section>
       <hgroup>
-        <h1>Hello, interwebs explorer.</h1>
+        <h1>Hello World !</h1>
         <h2>How to use this thing</h2>
       </hgroup>
-      <p>Press the right arrow, down arrow, or spacebar to advance; press the left arrow or up arrow to move backward.</p>
+      <p>Press the right arrow, down arrow, spacebar or click anywhere to advance; press the left arrow or up arrow to move backward.</p>
   		<p>You can also click the left and right arrows in the control bar at the top.</p>
     </section>
     <section>
@@ -39,9 +39,7 @@
         <h2>I'm calling these "actions"</h2>
       </hgroup>
         <p>You can hide/reveal content within the slides by giving something a class of "action". Actions are revealed in the order in which they occur in the HTML. Advancing to the next slide will first reveal actions on the page if they exist.</p>
-  	  <pre>
-&lt;p class=&quot;action&quot;&gt;This will be hidden when the slide loads&lt;/p&gt;
-  	  </pre>	
+  	  <pre>&lt;p class=&quot;action&quot;&gt;This will be hidden when the slide loads&lt;/p&gt;</pre>	
       <ul>
         <li class="action">Bullet point</li>
         <li class="action">Another bullet point</li>
@@ -58,8 +56,7 @@
   		<p>There's also an event triggered when a new "action" is revealed.</p>
   		<pre>
 //Example usage
-$(&#x27;html&#x27;).bind(&#x27;newSlide&#x27;, function(e,id) { console.log(id) });
-  		</pre>
+$(&#x27;html&#x27;).bind(&#x27;newSlide&#x27;, function(e,id) { console.log(id) });</pre>
     </section>
   	<section>
       <hgroup>
@@ -74,36 +71,33 @@ $(&#x27;html&#x27;).bind(&#x27;newSlide&#x27;, function(e,id) { console.log(id) 
         &lt;h2&gt;Your subheading&lt;/h2&gt;
     &lt;/hgroup&gt;
     &lt;p&gt;All your slide content...&lt;/p&gt;
-&lt;/section&gt;
-  		</pre>
+&lt;/section&gt;</pre>
   	  <p>You don't have to worry about numbering the slides. The script will count the number of <code>section</code> elements and give each one a numbered ID on page load.</p>
     </section>
   	<section>
       <hgroup>
         <h1>Plays well with images</h1>
       </hgroup>
-
       <img src="images/best-stegosaurus.png" alt="The Best Dinosaur" />
-      
-    </section>    
+    </section>
     <section>
       <hgroup>
         <h1>Other details</h1>
         <h2>Small stuff</h2>
       </hgroup>
+      <p>Generated document is printer-friendly.</p>
   		<p>The hash updates with each slide.</p>
-  		<p>The slideshow itself has 3 dependencies: jQuery, htmlSlides.js, and a small stylesheet.</p>
-  		<p>The slide script has one option, the option to hide the toolbar at the top:</p>
-  		<pre>
-htmlSlides.init({ toolbar: true });
-  		</pre>
+  		<p>The slideshow itself has 4 dependencies: jQuery, jSwipe, htmlSlides.js, and a small stylesheet.</p>
+  		<p>The slide script has one option, the option to hide the toolbar at the top :</p>
+  		<pre>htmlSlides.init({ hideToolbar: true });</pre>
     </section>
   	<section>
       <hgroup>
         <h1>That's all</h1>
       </hgroup>
-      <p>Get it at <a href="http://github.com/robflaherty/html-slideshow">github</a>.</p>
-      <p>- Rob Flaherty / <a href="http://twitter.com/robflaherty">@robflaherty</a> / <a href="mailto:rob@ravelrumba.com">rob@ravelrumba.com</a></p>
+      <p>Get it at <a href="https://github.com/martinkirch/html-slideshow">github</a>.</p>
+      <p>Based on <a href="https://github.com/robflaherty/html-slideshow">Rob Flaherty</a>'s work, modified by Martin Kirchgessner.
+        
     </section>
     <!-- /End slides -->
     
