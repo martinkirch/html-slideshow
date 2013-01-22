@@ -15,11 +15,9 @@
   <header>
     <h1>Example Slide Show</h1>
     <nav>
-      <ul>
-        <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
-        <li><span id="slide-number"></span>/<span id="slide-total"></span></li>
-        <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
-      </ul>
+      <button id="next-btn" title="Next Slide">Next Slide</button>
+      <span><span id="slide-number"></span>/<span id="slide-total"></span></span>
+      <button id="prev-btn" title="Previous slide">Previous Slide</button>
     </nav>
   </header>
   <div id="deck">
@@ -122,8 +120,8 @@ $(&#x27;html&#x27;).bind(&#x27;newSlide&#x27;, function(e,id) { console.log(id) 
         }
       });
 
-      //One little option: hideToolbar (boolean; default = false)
-      htmlSlides.init({ hideToolbar: true });
+      //One little option: hideToolbar { hideToolbar: true } , default = false
+      htmlSlides.init();
       
     });
   </script>
